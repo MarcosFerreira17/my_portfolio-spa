@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AdminPostsComponent } from './admin/admin-posts/admin-posts.component';
 import { HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
-import { NavComponent } from './shared/nav/nav.component';
 import { AdminUpdatePostComponent } from './admin/admin-update-post/admin-update-post.component';
 import { FormsModule } from '@angular/forms';
 @NgModule({
@@ -13,7 +12,6 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     AdminPostsComponent,
     HomeComponent,
-    NavComponent,
     AdminUpdatePostComponent
   ],
   imports: [
