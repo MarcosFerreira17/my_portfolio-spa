@@ -16,7 +16,7 @@
         <li>
           <a
             href="https://www.linkedin.com/in/marcoswferreira/"
-            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            class="transition duration-700 block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             aria-current="page"
             >LinkedIn</a
           >
@@ -24,7 +24,7 @@
         <li>
           <a
             href="https://github.com/MarcosFerreira17"
-            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            class="transition duration-700 block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
             >Github</a
           >
         </li>
@@ -60,12 +60,16 @@
           able to tackle any challenge that comes my way.
         </p>
       </div>
-      <div class="shrink-0">
+      <div
+        class="transition ease-in-out delay-150 duration-700 shrink-0 hover:scale-110 opacity-90 hover:opacity-100"
+      >
         <img
           class="h-64 w-60"
           src="assets/images/avatar.png"
           alt="Avatar image"
           loading="lazy"
+          data-bs-toggle="tooltip"
+          title="Avatar Marcos Ferreira"
         />
       </div>
     </div>
@@ -73,40 +77,54 @@
 
   <div class="px-3 py-9 gap-9 columns-6">
     <img
+      data-tooltip-target="tooltip-animation"
       class="h-16 w-16"
       src="/assets/images/azure.png"
       loading="lazy"
       alt="Azure Logo"
+      data-bs-toggle="tooltip"
+      title="Azure Cloud Solution"
     />
+
     <img
       class="h-16 w-16"
       src="/assets/images/c-sharp.png"
       loading="lazy"
       alt="c-sharp Logo"
+      data-bs-toggle="tooltip"
+      title="C-Sharp Programming language"
     />
     <img
       class="h-16 w-16"
       src="/assets/images/dotnet.png"
       loading="lazy"
       alt="dotnet Logo"
+      data-bs-toggle="tooltip"
+      title="Dotnet framework"
     />
     <img
       class="h-16 w-16"
       src="/assets/images/angular.png"
       loading="lazy"
       alt="Angular Logo"
+      data-bs-toggle="tooltip"
+      title="Angular frontend framework"
     />
     <img
       class="h-16 w-16"
       src="/assets/images/java.png"
       loading="lazy"
       alt="Java Logo"
+      data-bs-toggle="tooltip"
+      title="Java Programming language"
     />
     <img
       class="h-16 w-16"
       src="/assets/images/spring-boot.png"
       loading="lazy"
       alt="SpringBoot Logo"
+      data-bs-toggle="tooltip"
+      title="SpringBoot framework"
     />
     <!-- ... -->
   </div>
@@ -126,7 +144,7 @@
         <div class="shrink-0">
           <a href="/"
             ><img
-              class="h-36 w-36 hover:translate-y-1"
+              class="transition duration-700 h-36 w-36 hover:translate-y-1"
               src="assets/images/project-1.png"
               alt="Project Web Design"
               loading="lazy"
@@ -135,7 +153,7 @@
         <div>
           <div class="flex flex-col items-center gap-y-2 md:flex-row">
             <a
-              class="hover:text-cyan-400"
+              class="transition duration-700 hover:text-cyan-400"
               href="https://github.com/MarcosFerreira17/linky-shop-app"
             >
               <div class="text-xl font-semibold">LinkyShop Application</div>
@@ -179,7 +197,7 @@
         <div class="shrink-0">
           <a href="/"
             ><img
-              class="h-36 w-36 hover:translate-y-1"
+              class="transition duration-700 h-36 w-36 hover:translate-y-1"
               src="assets/images/project-2.png"
               alt="Project Fire"
               loading="lazy"
@@ -188,7 +206,7 @@
         <div>
           <div class="flex flex-col items-center gap-y-2 md:flex-row">
             <a
-              class="hover:text-cyan-400"
+              class="transition duration-700 hover:text-cyan-400"
               href="https://github.com/MarcosFerreira17/ProEventos"
             >
               <div class="text-xl font-semibold">Pro Eventos</div>
@@ -231,7 +249,7 @@
         <div class="shrink-0">
           <a href="/"
             ><img
-              class="h-36 w-36 hover:translate-y-1"
+              class="transition duration-700 h-36 w-36 hover:translate-x-2"
               src="assets/images/project-3.png"
               alt="Project Maps"
               loading="lazy"
@@ -240,12 +258,17 @@
         <div>
           <div class="flex flex-col items-center gap-y-2 md:flex-row">
             <a
-              class="hover:text-cyan-400"
+              class="transition duration-700 hover:text-cyan-400"
               href="https://github.com/MarcosFerreira17/clean-architecture_templates"
             >
-              <div class="text-xl font-semibold">.NET WebAPI Templates</div>
+              <div class="text-xl font-semibold">.NET Templates</div>
             </a>
             <div class="ml-3 flex gap-2">
+              <div
+                class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900"
+              >
+                .NET
+              </div>
               <div
                 class="rounded-md px-2 py-1 text-xs font-semibold bg-emerald-400 text-emerald-900"
               >
@@ -276,7 +299,7 @@
         <div class="shrink-0">
           <a href="/"
             ><img
-              class="h-36 w-36 hover:translate-y-1"
+              class="transition duration-700 h-36 w-36 hover:-translate-y-1.5"
               src="assets/images/project-4.png"
               alt="Project Maps"
               loading="lazy"
@@ -285,7 +308,7 @@
         <div>
           <div class="flex flex-col items-center gap-y-2 md:flex-row">
             <a
-              class="hover:text-cyan-400"
+              class="transition duration-700 hover:text-cyan-400"
               href="https://github.com/MarcosFerreira17/url-shortener-api"
             >
               <div class="text-xl font-semibold">Linky URL-Shortener</div>
@@ -321,7 +344,7 @@
       </div>
       <div>
         <p
-          class="font-mono text-lg italic font-medium tracking-tighter text-sky-500/75 hover:text-sky-300"
+          class="transition duration-700 font-mono text-lg italic font-medium tracking-tighter text-sky-500/75 hover:text-sky-300"
         >
           <a href="https://github.com/MarcosFerreira17">see more...</a>
         </p>
@@ -330,7 +353,11 @@
   </div>
   <div class="mx-auto max-w-screen-lg px-3 py-6">
     <div class="text-center">
-      <h1 class="text-2xl text-sky-400 hover:text-sky-300">Let's connect</h1>
+      <h1
+        class="transition duration-700 text-2xl text-sky-400 hover:text-sky-300"
+      >
+        Let's connect
+      </h1>
       <p class="text-lg">
         I'm posting .NET/Java and
         <span class="text-sky-400 italic">software engineering</span> content on
@@ -346,6 +373,8 @@
           src="/assets/images/linkedin.png"
           loading="lazy"
           alt="Linkedin Logo"
+          data-bs-toggle="tooltip"
+          title="My Linkedin profile"
         />
       </a>
       <a href="https://github.com/MarcosFerreira17">
@@ -354,6 +383,8 @@
           src="/assets/images/Octocat.png"
           loading="lazy"
           alt="Github Logo"
+          data-bs-toggle="tooltip"
+          title="My portfolio on github"
         />
       </a>
       <a href="https://medium.com/"
@@ -362,6 +393,8 @@
           src="/assets/images/medium.png"
           loading="lazy"
           alt="Medium Logo"
+          data-bs-toggle="tooltip"
+          title="Medium blog"
         />
       </a>
       <div></div>
