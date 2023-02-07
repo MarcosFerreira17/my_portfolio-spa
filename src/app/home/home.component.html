@@ -47,7 +47,7 @@
             class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
             >Marcos Ferreira</span
           >
-          👋
+          <span class="animate-waving-hand">👋🏻</span>
         </h1>
         <p class="mt-6 mb-6 text-xl leading-9">
           Student of <a class="text-cyan-400">Information Systems</a> at UNESA,
@@ -77,58 +77,64 @@
     </div>
   </div>
 
-  <div class="px-3 py-9 gap-9 columns-6">
-    <img
-      data-tooltip-target="tooltip-animation"
-      class="h-16 w-16"
-      src="/assets/images/azure.png"
-      loading="lazy"
-      alt="Azure Logo"
-      data-bs-toggle="tooltip"
-      title="Azure Cloud Solution"
-    />
+  <div class="mx-auto max-w-screen-lg">
+    <div class="mx-auto max-w-screen-lg px-3 py-9">
+      <div
+        class="flex flex-wrap items-center md:flex-wrap md:justify-between md:gap-9 md:gap-x-9 space-x-10 space-y-4"
+      >
+        <img
+          data-tooltip-target="tooltip-animation"
+          class="h-16 w-16"
+          src="/assets/images/azure.png"
+          loading="lazy"
+          alt="Azure Logo"
+          data-bs-toggle="tooltip"
+          title="Azure Cloud Solution"
+        />
 
-    <img
-      class="h-16 w-16"
-      src="/assets/images/c-sharp.png"
-      loading="lazy"
-      alt="c-sharp Logo"
-      data-bs-toggle="tooltip"
-      title="C-Sharp Programming language"
-    />
-    <img
-      class="h-16 w-16"
-      src="/assets/images/dotnet.png"
-      loading="lazy"
-      alt="dotnet Logo"
-      data-bs-toggle="tooltip"
-      title="Dotnet framework"
-    />
-    <img
-      class="h-16 w-16"
-      src="/assets/images/angular.png"
-      loading="lazy"
-      alt="Angular Logo"
-      data-bs-toggle="tooltip"
-      title="Angular frontend framework"
-    />
-    <img
-      class="h-16 w-16"
-      src="/assets/images/java.png"
-      loading="lazy"
-      alt="Java Logo"
-      data-bs-toggle="tooltip"
-      title="Java Programming language"
-    />
-    <img
-      class="h-16 w-16"
-      src="/assets/images/spring-boot.png"
-      loading="lazy"
-      alt="SpringBoot Logo"
-      data-bs-toggle="tooltip"
-      title="SpringBoot framework"
-    />
-    <!-- ... -->
+        <img
+          class="h-16 w-16"
+          src="/assets/images/c-sharp.png"
+          loading="lazy"
+          alt="c-sharp Logo"
+          data-bs-toggle="tooltip"
+          title="C-Sharp Programming language"
+        />
+        <img
+          class="h-16 w-16"
+          src="/assets/images/dotnet.png"
+          loading="lazy"
+          alt="dotnet Logo"
+          data-bs-toggle="tooltip"
+          title="Dotnet framework"
+        />
+        <img
+          class="h-16 w-16"
+          src="/assets/images/angular.png"
+          loading="lazy"
+          alt="Angular Logo"
+          data-bs-toggle="tooltip"
+          title="Angular frontend framework"
+        />
+        <img
+          class="h-16 w-16"
+          src="/assets/images/java.png"
+          loading="lazy"
+          alt="Java Logo"
+          data-bs-toggle="tooltip"
+          title="Java Programming language"
+        />
+        <img
+          class="h-16 w-16"
+          src="/assets/images/spring-boot.png"
+          loading="lazy"
+          alt="SpringBoot Logo"
+          data-bs-toggle="tooltip"
+          title="SpringBoot framework"
+        />
+        <!-- ... -->
+      </div>
+    </div>
   </div>
 
   <div class="mx-auto max-w-screen-lg px-3 pb-6">
@@ -144,7 +150,9 @@
         class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"
       >
         <div class="shrink-0">
-          <a href="/"
+          <a
+            href="https://github.com/MarcosFerreira17/linky-shop-app"
+            target="_blank"
             ><img
               class="transition duration-700 h-36 w-36 hover:translate-y-1"
               src="assets/images/project-1.png"
@@ -198,7 +206,9 @@
         class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"
       >
         <div class="shrink-0">
-          <a href="/"
+          <a
+            href="https://github.com/MarcosFerreira17/ProEventos"
+            target="_blank"
             ><img
               class="transition duration-700 h-36 w-36 hover:translate-y-1"
               src="assets/images/project-2.png"
@@ -251,7 +261,9 @@
         class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"
       >
         <div class="shrink-0">
-          <a href="/"
+          <a
+            href="https://github.com/MarcosFerreira17/clean-architecture_templates"
+            target="_blank"
             ><img
               class="transition duration-700 h-36 w-36 hover:translate-x-2"
               src="assets/images/project-3.png"
@@ -302,7 +314,9 @@
         class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row"
       >
         <div class="shrink-0">
-          <a href="/"
+          <a
+            href="https://github.com/MarcosFerreira17/url-shortener-api"
+            target="_blank"
             ><img
               class="transition duration-700 h-36 w-36 hover:-translate-y-1.5"
               src="assets/images/project-4.png"
@@ -348,14 +362,15 @@
           </p>
         </div>
       </div>
-      <div>
-        <p
-          class="transition duration-700 font-mono text-lg italic font-medium tracking-tighter text-sky-500/75 hover:text-sky-300"
+      <div class="flex space-x-2 justify-center">
+        <button
+          type="button"
+          class="transition duration-700 delay-100 animate-pulse font-mono text-lg italic font-medium tracking-tighter text-sky-500 hover:text-sky-300"
         >
           <a href="https://github.com/MarcosFerreira17" target="_blank"
             >see more...</a
           >
-        </p>
+        </button>
       </div>
     </div>
   </div>
@@ -367,7 +382,7 @@
         Let's connect
       </h1>
       <p class="text-lg">
-        I'm posting .NET/Java and
+        I'm posting about
         <span class="text-sky-400 italic">software engineering</span> content on
         multiple Social Media platforms.
         <span class="font-bold"> Reach out</span> and let's
@@ -388,24 +403,23 @@
       <a href="https://github.com/MarcosFerreira17" target="_blank">
         <img
           class="h-16 w-16"
-          src="/assets/images/Octocat.png"
+          src="/assets/images/github.png"
           loading="lazy"
           alt="Github Logo"
           data-bs-toggle="tooltip"
           title="My portfolio on github"
         />
       </a>
-      <a href="https://medium.com/" target="_blank"
+      <a href="mailto:marcosfw7@outlook.com" target="_blank"
         ><img
           class="h-16 w-16"
-          src="/assets/images/medium.png"
+          src="/assets/images/email.png"
           loading="lazy"
-          alt="Medium Logo"
+          alt="send email Logo"
           data-bs-toggle="tooltip"
-          title="Medium blog"
+          title="Marcos Ferreira email address"
         />
       </a>
-      <div></div>
       <!-- ... -->
     </div>
   </div>
@@ -416,7 +430,7 @@
         <!-- -->
         <a
           class="text-cyan-400 hover:underline"
-          href=""
+          href="https://www.linkedin.com/in/marcoswferreira"
           target="_blank"
           rel="noopener noreferrer"
           >Marcos Ferreira</a
