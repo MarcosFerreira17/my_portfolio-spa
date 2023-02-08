@@ -6,7 +6,7 @@
       <div
         class="flex items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent"
       >
-        Glad to see you here!
+        {{ "navbar" | translate }}
       </div>
     </a>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -32,15 +32,17 @@
         </li>
         <li>
           <div class="language-picker-area">
-            <div class="picker-label">{{ "choose_language" | translate }}</div>
             <select
-              class="text-gray-700 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark bg-transparent"
+              class="language-picker text-gray-700 rounded hover:bg-gray-100 md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark bg-transparent"
               name="languages"
-              id="language-picker"
               (change)="selectLanguage($event)"
             >
-              <option value="en-US">'language.english' | translate</option>
-              <option value="pt-BR">'language.portuguese' | translate</option>
+              <option value="en-US">
+                {{ "en-US" | translate }}
+              </option>
+              <option value="pt-BR">
+                {{ "pt-BR" | translate }}
+              </option>
             </select>
           </div>
         </li>
@@ -56,7 +58,7 @@
     >
       <div>
         <h1 class="text-3xl font-bold">
-          Hi there, I'm
+          {{ "hi-there" | translate }}
           <span
             class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
             >Marcos Ferreira</span
@@ -64,16 +66,16 @@
           <span class="animate-waving-hand">👋🏻</span>
         </h1>
         <p class="mt-6 mb-6 text-xl leading-9">
-          Student of <a class="text-cyan-400">Information Systems</a> at UNESA,
-          and a current intern in the
+          {{ "student" | translate }}
+          <a class="text-cyan-400">{{ "college" | translate }}</a>
+          {{ "atUnesa" | translate }}
           <!-- -->
-          <a class="text-cyan-400">engineering team</a>
+          <a class="text-cyan-400">{{ "team" | translate }}</a>
           <!-- -->
-          at GFT group, I am passionate about developing my skills as a
-          <a class="text-cyan-400">backend developer.</a>
+          {{ "gftGroup" | translate }}
+          <a class="text-cyan-400">{{ "function" | translate }}</a>
           <!-- -->
-          With a strong foundation in various technologies and approaches, I am
-          able to tackle any challenge that comes my way.
+          {{ "final" | translate }}
         </p>
       </div>
       <div
@@ -153,10 +155,10 @@
 
   <div class="mx-auto max-w-screen-lg px-3 pb-6">
     <div class="mb-6 text-2xl font-bold">
-      Recent
+      {{ "tittle-Recent" | translate }}
       <span
         class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
-        >Projects</span
+        >{{ "tittle-Projects" | translate }}</span
       >
     </div>
     <div class="flex flex-col gap-6">
@@ -181,7 +183,9 @@
               href="https://github.com/MarcosFerreira17/linky-shop-app"
               target="_blank"
             >
-              <div class="text-xl font-semibold">LinkyShop Application</div>
+              <div class="text-xl font-semibold">
+                {{ "first-project-tittle" | translate }}
+              </div>
             </a>
             <div class="ml-3 flex gap-2">
               <div
@@ -207,12 +211,7 @@
             </div>
           </div>
           <p class="mt-3 text-gray-400">
-            Our microservices architecture delivers comprehensive e-commerce
-            functionality, including Catalog, Basket, Discount, and Ordering
-            modules. We employ both NoSQL and Relational databases and utilize
-            RabbitMQ for event-driven communication. The Ocelot API Gateway
-            manages communication between the microservices, ensuring seamless
-            integration and optimal performance.
+            {{ "first-project-description" | translate }}
           </p>
         </div>
       </div>
@@ -237,7 +236,9 @@
               href="https://github.com/MarcosFerreira17/ProEventos"
               target="_blank"
             >
-              <div class="text-xl font-semibold">Pro Eventos</div>
+              <div class="text-xl font-semibold">
+                {{ "second-project-tittle" | translate }}
+              </div>
             </a>
             <div class="ml-3 flex gap-2">
               <div
@@ -263,11 +264,7 @@
             </div>
           </div>
           <p class="mt-3 text-gray-400">
-            Our RESTful API, powered by ASP.NET Core, features advanced
-            filtering, robust data modeling, and HATEOAS support. Implemented
-            using clean architecture principles, it integrates seamlessly with
-            Entity Framework Core. The frontend is built with the Angular
-            framework for a seamless user experience.
+            {{ "first-project-description" | translate }}
           </p>
         </div>
       </div>
@@ -292,7 +289,9 @@
               href="https://github.com/MarcosFerreira17/clean-architecture_templates"
               target="_blank"
             >
-              <div class="text-xl font-semibold">.NET Templates</div>
+              <div class="text-xl font-semibold">
+                {{ "third-project-tittle" | translate }}
+              </div>
             </a>
             <div class="ml-3 flex gap-2">
               <div
@@ -318,9 +317,7 @@
             </div>
           </div>
           <p class="mt-3 text-gray-400">
-            This project features minimalistic templates, designed to help you
-            quickly implement clean architecture concepts and make progress on
-            your project with ease.
+            {{ "third-project-description" | translate }}
           </p>
         </div>
       </div>
@@ -345,7 +342,9 @@
               href="https://github.com/MarcosFerreira17/url-shortener-api"
               target="_blank"
             >
-              <div class="text-xl font-semibold">Linky URL-Shortener</div>
+              <div class="text-xl font-semibold">
+                {{ "fourth-project-tittle" | translate }}
+              </div>
             </a>
             <div class="ml-3 flex gap-2">
               <div
@@ -371,8 +370,7 @@
             </div>
           </div>
           <p class="mt-3 text-gray-400">
-            Linky is a sleek URL shortening solution, crafted with simplicity in
-            mind, utilizing the power of the Minimal API.
+            {{ "fourth-project-description" | translate }}
           </p>
         </div>
       </div>
@@ -381,9 +379,9 @@
           type="button"
           class="transition duration-700 delay-100 animate-pulse font-mono text-lg font-medium tracking-tighter rounded-md px-2 py-1 text-white hover:text-sky-300"
         >
-          <a href="https://github.com/MarcosFerreira17" target="_blank"
-            >see more...</a
-          >
+          <a href="https://github.com/MarcosFerreira17" target="_blank">{{
+            "more-projects" | translate
+          }}</a>
         </button>
       </div>
     </div>
@@ -397,12 +395,12 @@
         <div class="lg:pr-8 lg:pt-4">
           <div class="lg:max-w-lg">
             <h2 class="text-lg font-semibold leading-8 tracking-tight">
-              My Technical
+              {{ "tech-cert" | translate }}
             </h2>
             <p
               class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent"
             >
-              Certifications
+              {{ "tech-cert1" | translate }}
             </p>
             <dl
               class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none"
@@ -429,13 +427,11 @@
                     class="transition duration-300 delay-100 hover:text-cyan-400"
                     href="https://www.credly.com/badges/1afe24ef-d32e-4b34-93bf-9e6222ff9655/linked_in_profile"
                   >
-                    Microsoft Certified: Azure Fundamentals.
+                    {{ "first-cert" | translate }}
                   </a>
                 </dt>
                 <dd class="inline">
-                  Earners of the Azure Fundamentals certification have
-                  demonstrated foundational level knowledge of cloud services
-                  and how those services are provided with Microsoft Azure.
+                  {{ "description-first-cert" | translate }}
                 </dd>
               </div>
 
@@ -458,13 +454,11 @@
                     class="transition duration-300 delay-100 hover:text-cyan-400"
                     href="https://www.credly.com/badges/76c0bb25-741a-43c5-bd12-5b8b2d3a15e2"
                   >
-                    Microsoft Certified: Azure Data Fundamentals.
+                    {{ "second-cert" | translate }}
                   </a>
                 </dt>
                 <dd class="inline">
-                  Earners of the Azure Data Fundamentals certification have
-                  demonstrated foundational knowledge of core data concepts and
-                  how they are implemented using Microsoft Azure data services.
+                  {{ "description-second-cert" | translate }}
                 </dd>
               </div>
 
@@ -486,15 +480,11 @@
                   <a
                     class="transition duration-300 delay-100 hover:text-cyan-400"
                     href="https://www.credly.com/badges/600732b7-18c8-4a6f-a0b2-c7d2b350638e"
-                    >Microsoft Certified: Security, Compliance, and Identity
-                    Fundamentals.</a
+                    >{{ "third-cert" | translate }}</a
                   >
                 </dt>
                 <dd class="inline">
-                  Earners of the Security, Compliance, and Identity Fundamentals
-                  demonstrate a functional understanding of security,
-                  compliance, and identity (SCI) across cloud-based and related
-                  Microsoft services.
+                  {{ "description-third-cert" | translate }}
                 </dd>
               </div>
             </dl>
@@ -517,14 +507,18 @@
       <h1
         class="transition duration-700 text-2xl text-sky-400 hover:text-sky-300"
       >
-        Let's connect
+        {{ "connect-tittle" | translate }}
       </h1>
       <p class="text-lg">
-        I'm posting about
-        <span class="text-sky-400 italic">software engineering</span> content on
-        multiple Social Media platforms.
-        <span class="font-bold"> Reach out</span> and let's
-        <span class="font-bold"> connect</span>.
+        {{ "connect-text1" | translate }}
+        <span class="text-sky-400 italic">{{
+          "connect-software" | translate
+        }}</span>
+        {{ "connect-text2" | translate }}
+        <span class="font-bold"> {{ "connect-reach" | translate }}</span>
+        {{ "connect-lets" | translate }}
+        <span class="font-bold"> {{ "connect-con" | translate }}</span
+        >.
       </p>
     </div>
     <div class="flex justify-center px-3 py-9 gap-4 columns-4">
@@ -564,7 +558,7 @@
   <div class="mx-auto max-w-screen-lg px-3 py-6">
     <div class="border-t border-gray-600 pt-5">
       <div class="text-sm text-gray-200">
-        Built with ♥ by
+        {{ "footer" | translate }} ♥ by
         <!-- -->
         <a
           class="text-cyan-400 hover:underline"
